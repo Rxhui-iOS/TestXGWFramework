@@ -1,0 +1,21 @@
+<config>
+    <getConfigParam>isProduction</getConfigParam>
+    <getInfoUrl>http://tg.sso.zq88.cn:9224</getInfoUrl> <!-- 接口地址 -->
+    <accountUrl>https://www.hczq.com</accountUrl>
+    <profileImageUrl>http://download.zq88.cn</profileImageUrl>
+    <recommendUrl>https://www.hczq.com</recommendUrl>
+    <messageUrl>http://info.zq88.cn:9085</messageUrl>
+    <tradeUrl>https://ufx.hczq.com:9000</tradeUrl><!--交易优化前: 新增加请求历史交易交易接口，因为dev环境只有在20上有数据，所以这个接口只有历史交易能用  交易优化后: 历史接口已不再用，ST风险揭示书签署用-->
+    <queryStockUrl>http://info.zq88.cn:9085</queryStockUrl> <!-- 查询股票 -->
+    <followOrderUrl>https://www.hczq.com</followOrderUrl><!-- 跟单接口-->
+    <followOrderFundUrl>http://p.jinhui365.com</followOrderFundUrl><!--跟单理财接口-->
+    <queryBuySellUrl>http://besti.jinhui123.com:9006</queryBuySellUrl><!--买卖信号接口-->
+    <htmlPageUrl>http://www.hczq.com</htmlPageUrl>
+    <hsNoticeUrl>https://minfo.gildata.com</hsNoticeUrl>
+    <h5PageUrl>http://moblie.hczq.com/xgw</h5PageUrl>
+    <bonePageUrl>http://smart.jinhui001.com</bonePageUrl>
+    <IMUrl>http://im.jinhui001.com</IMUrl>
+    <WXPayUrl>http://smart-pay.rxhui.com</WXPayUrl>
+    <cRHOpenAccountUrl>http://bjkhjk.hczq.com:60001</cRHOpenAccountUrl>
+
+</config>

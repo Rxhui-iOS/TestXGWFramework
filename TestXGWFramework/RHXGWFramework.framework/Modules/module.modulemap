@@ -1,0 +1,6 @@
+framework module RHXGWFramework {
+  umbrella header "RHXGWFramework.h"
+
+  export *
+  module * { export * }
+}

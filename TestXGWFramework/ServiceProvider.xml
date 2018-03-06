@@ -1,0 +1,682 @@
+<Services>
+    
+    <!--股票详情页 操作信号-->
+    <operateSignal>{messageUrl}/smartPick/operation.do</operateSignal>
+    
+    <!--股票详情页 操作曲线-->
+    <operateCurve>{messageUrl}/smartPick/operationPoint.do</operateCurve>
+    
+    <!--股票详情页 气泡-->
+    <stockDetailbubble>{messageUrl}/smartPick/showOperationHotPoint.do</stockDetailbubble>
+    
+    <!--股票详情页 自选股列表-->
+    <selfStockList>{messageUrl}/smartPick/getCustomStockCodesByUserId.do</selfStockList>
+    
+    <!--股票详情页 基本面-->
+    <stockDetailFundamentals>{messageUrl}/smartPick/personStkCompInfo.do</stockDetailFundamentals>
+    
+    <!--股票详情页 基本面业绩-->
+    <stockDetailFundamentalsData>{messageUrl}/smartPick/personStkDataInfo.do</stockDetailFundamentalsData>
+    
+    <!--登录注册/获取验证-->
+    <getVerifyCodeService>{getInfoUrl}/userCenter/verifyCode.do</getVerifyCodeService>
+    <!--登录注册/获取sessionID-->
+    <getVerifySessionIDService>{getInfoUrl}/clientId.do</getVerifySessionIDService>
+    <!--登录注册/获取图片验证码-->
+    <getVerifyImageService>{getInfoUrl}/kaptcha.do</getVerifyImageService>
+    
+    <!--上传身份证照片-->
+    <uploadIndentificationService>{accountUrl}/investmentAdviser/uploadIndentification.do</uploadIndentificationService>
+    <!--投顾大赛提交注册信息-->
+    <registSubmitService>{accountUrl}/investmentAdviser/registSubmit.do</registSubmitService>
+    <!--投顾大赛查询报名状态-->
+    <registStataService>{accountUrl}/investmentAdviser/toRegister.do</registStataService>
+    <!--投顾大赛查询报名失败，请求编辑信息-->
+    <registEditorService>{accountUrl}/investmentAdviser/reApply.do</registEditorService>
+    
+    <!--投顾组合页面修改跟单价格-->
+    <updatePriceService>{accountUrl}/game/alterPrice.do</updatePriceService>
+    
+    <!--登录注册/验证码验证-->
+    <checkVerifyCodeService>{getInfoUrl}/userCenter/checkVerifyCode.do</checkVerifyCodeService>
+    <!--登录注册/重置密码-->
+    <modifyLoginPasswdService>{getInfoUrl}/customer/resetPassword.do</modifyLoginPasswdService>
+    <!--登录注册/注册-->
+    <accountRegisterService>{accountUrl}/user/register.do</accountRegisterService>
+    <!--登录注册/登录-->
+    <accountLoginService>{accountUrl}/user/login.do</accountLoginService>
+    <!--登录注册/设置头像-->
+    <uploadPhotoImageService>{accountUrl}/user/uploadAvatar.do</uploadPhotoImageService>
+    <!--登录注册/修改用户资料-->
+    <uploadPersionInfoService>{accountUrl}/user/setUserDetail.do</uploadPersionInfoService>
+    
+    
+    <!--讨论首页/讨论列表-->
+    <forumsDiscussionService>{accountUrl}/fund/speakLists.do</forumsDiscussionService>
+    <!--讨论首页/置顶的推荐列表-->
+    <forumsRecommendService>{recommendUrl}/message/recommend.do</forumsRecommendService>
+    <!--讨论首页/讨论（置顶）详情的评论列表-->
+    <commentListService>{accountUrl}/weibo/commentListsFormat.do</commentListService>
+    <!--讨论首页根据置顶单取详情-->
+    <getDetailService>{accountUrl}/weibo/message.do</getDetailService>
+    <!--获取最新的一条评论-->
+    <getLastComment>{accountUrl}/weibo/latestComment.do</getLastComment>
+    <!--获取最新的一条讨论-->
+    <getLastDiscussion>{accountUrl}/message/latestMessage.do</getLastDiscussion>
+    <!--发送评论-->
+    <postCommentService>{accountUrl}/message/comment.do</postCommentService>
+    <!--发送赞-->
+    <postLikeService>{accountUrl}/user/like.do</postLikeService>
+    <!--发送新讨论-->
+    <postNewDisService>{accountUrl}/message.do</postNewDisService>
+    <!--推荐话题/置顶/今日看点-->
+    <getRecommendService>{recommendUrl}/message/recommend.do</getRecommendService>
+    
+    
+    <!--消息/评论列表-->
+    <getReceivedCommentsService>{accountUrl}/weibo/receivedComments.do</getReceivedCommentsService>
+    <!--消息/at列表-->
+    <getReceivedAtService>{accountUrl}/weibo/atListsFormat.do</getReceivedAtService>
+    <!--消息/系统消息列表-->
+    <getReceivedSystemService>{messageUrl}/stockFirm/querySysInfoByPerson.do</getReceivedSystemService>
+    <!--消息/系统消息详情-->
+    <getReceivedSystemDetailService>{messageUrl}/stockFirm/queryInfoByMsgId.do</getReceivedSystemDetailService>
+    <!--消息推送/用户登录请求-->
+    <getLoginService>{messageUrl}/jpush/getJPushSwitch.do</getLoginService>
+    <!--消息/清空计数请求-->
+    <clearCountService>{messageUrl}/stockFirm/clearedUserTips.do</clearCountService>
+    <!--消息/查询气泡数&总数-->
+    <getTipsNumberService>{messageUrl}/stockFirm/queryTipsNumberAndTotalNumber.do</getTipsNumberService>
+    
+    
+    <!--大赛报道详情-->
+    <getCommentDetailService>{accountUrl}/weibo/commentListsFormat.do</getCommentDetailService>
+    <!--首页大赛排行-->
+    <getIndexRankListService>{accountUrl}/game/rankLists.do</getIndexRankListService>
+    <!--推荐牛人-->
+    <getUserRecommendService>{recommendUrl}/userRecommend.do</getUserRecommendService>
+    <!--牛人动态-->
+    <getHomePageRecommedService>{followOrderUrl}/game/recommed.do</getHomePageRecommedService>
+    <!--金汇理财-->
+    <jinhuiPopularize>{followOrderFundUrl}/indexHotSale</jinhuiPopularize>
+    <!--实盘榜单-->
+    <getFactRankListService>{recommendUrl}/game/rankLists.do</getFactRankListService>
+    <!--查看是否关联华创账号-->
+    <checkHCZHAssociatedService>{accountUrl}/hczqAssociated.do</checkHCZHAssociatedService>
+    <!--绑定华创资金账户-->
+    <bindHCZHService>{accountUrl}/hczqAssociated/bindHC.do</bindHCZHService>
+    <!--报名参赛-->
+    <enterNameService>{accountUrl}/game/player.do</enterNameService>
+    <!--大赛简介-->
+    <getCompeteIntroduce>{accountUrl}/r/common/phoneInduct.html</getCompeteIntroduce>
+    <!--比赛首页广告-->
+    <getADList>{accountUrl}/ad/list.do</getADList>
+    <!--实盘折线图-->
+    <getFactChartList>{accountUrl}/game/multiRateTrendList.do</getFactChartList>
+    
+    <!--投顾列表、投顾领投挑战赛-->
+<!--    <getInvestList>{accountUrl}/investmentAdviser/rankingAndPosition.do</getInvestList>-->
+
+    <!--收益率-->
+    <getInvestProfit>{accountUrl}/investmentAdviser/rankingsOverview.do</getInvestProfit>
+    <!--投顾详情-->
+    <getInvestAccountDetail>{accountUrl}/investmentAdviser/accountInfo.do</getInvestAccountDetail>
+    <!--投顾收益率列表-->
+    <getInvestProfitList>{messageUrl}/simulate/profitRate.do</getInvestProfitList>
+     <!--深沪三百收益率数据-->
+    <getInvestShenHuList>{accountUrl}/investmentAdviser/hs300.do</getInvestShenHuList>
+    <!--搜索比赛人-->
+    <searchCompeter>{recommendUrl}/game/personList.do</searchCompeter>
+    <!--搜索组合-->
+    <searchCombination>{accountUrl}/game/portfolioList.do</searchCombination>
+    <!--投顾持股-->
+    <getInvestStock>{accountUrl}/investmentAdviser/simulate/position.do</getInvestStock>
+    <!--投顾交易-->    
+    <getInvestDealList>{accountUrl}/investmentAdviser/portfoliosHistoryTrading.do</getInvestDealList>
+    
+    <!--投顾列表、投顾领投挑战赛-->
+    <getInvestProfitRankList>{accountUrl}/investmentAdviser/profitRankings.do</getInvestProfitRankList>
+    
+    <!--粉丝数据统计-->
+    <getFriendFansServic>{accountUrl}/user/counter.do</getFriendFansServic>
+    <!--粉丝列表-->
+    <getFansListService>{accountUrl}/user/relationship.do</getFansListService>
+    <!--添加或取消关注-->
+    <attentionOperationService>{accountUrl}/user/addOrcancelFollow.do</attentionOperationService>
+    <!--查询是否已关注-->
+    <hasAttentionedService>{accountUrl}/followStatus.do</hasAttentionedService>
+    <!--首页-个人收益率-->
+    <getAccountRankInfoService>{accountUrl}/game/rankInfo.do</getAccountRankInfoService>
+    
+    <!--实盘 查询跟单数-->
+    <getTrackOrderService>{accountUrl}/game/trackOrderCount.do</getTrackOrderService>
+    
+    <!--实盘 查询跟单价格-->
+    <getTrackOrderPriceService>{accountUrl}/game/userTrackOrderPrice.do</getTrackOrderPriceService>
+    
+    <!--我首页-统计数据-->
+    <getUserCountService>{accountUrl}/user/counter.do</getUserCountService>
+    <!--个人主页-用户信息-->
+    <getAccountRankInfoListService>{accountUrl}/game/rankInfoLists.do</getAccountRankInfoListService>
+    
+    <!--个人主页-实盘收益率折线图-->
+    <getAccountMultiRateTrendService>{accountUrl}/game/multiRateTrend.do</getAccountMultiRateTrendService>
+    
+    <!--主页-实盘交易列表-->
+    <getRealDealListService>{accountUrl}/game/realDealLists.do</getRealDealListService>
+    
+    <!--主页-投顾交易列表-->
+    <getInterestListService>{accountUrl}/investmentAdviser/stockCodeTradingRec.do</getInterestListService>
+    
+    <!--主页-持股列表-->
+    <getAccountPositionListService>{accountUrl}/game/positionLists.do</getAccountPositionListService>
+    <!--关注 - 帖子列表-->
+    <getWeiboListService>{accountUrl}/weibo/weiboProfile.do</getWeiboListService>
+    <!--关注 - 交易列表-->
+    <getFriendFansDealService>{accountUrl}/game/friendDealLists.do</getFriendFansDealService>
+    <!--关注 - 名次列表-->
+    <getFriendFansRankListService>{accountUrl}/game/friendRankLists.do</getFriendFansRankListService>
+    <!--关注 - 牛人列表-->
+    <getFriendListService>{accountUrl}/user/manageCenter/myfriends.do</getFriendListService>
+    <!--个人帖子列表-->
+    <getSelfMessageListService>{accountUrl}/weibo/messageList.do</getSelfMessageListService>
+    <!--我/个人主页/获取用户资料-->
+    <getUserDetailService>{accountUrl}/user/userDetail.do</getUserDetailService>
+    <!--我/个人主页/查询用户是否参赛-->
+    <getUserInGameInfo>{accountUrl}/game/inGame.do</getUserInGameInfo>
+    <!--我/个人主页/跟单状态-->
+    <getUserFollowStatus>{accountUrl}/automatic/recentRelation.do</getUserFollowStatus>
+    <!--我/个人主页/免费跟单数量-->
+    <getUserFreeCount>{accountUrl}/automatic/remainTimes.do</getUserFreeCount>
+    
+    <!--优惠券-->
+    <getUserCoupon>{accountUrl}/game/userCoupon.do</getUserCoupon>
+    
+    <!--我/短信跟单/我的跟单-->
+    <messageFollowWhoFollowMe>{accountUrl}/game/trackOrder.do</messageFollowWhoFollowMe>
+    <!--我/短信跟单/我跟了谁-->
+    <messageFollowIFollowWho>{accountUrl}/game/myTrackOrder.do</messageFollowIFollowWho>
+    <!--跟单提示列表-->
+    <messageFollowRemind>{messageUrl}/push/pushInfoForUser.do</messageFollowRemind>
+    <!--跟单提示气泡-->
+    <messageFollowBubble>{messageUrl}/push/getTipsByUserId.do</messageFollowBubble>
+    <!--清除提示气泡-->
+    <cleanRemindBubble>{messageUrl}/push/clearedUserTips.do</cleanRemindBubble>
+    <!--投顾一键跟单提示列表-->
+    <investAutoFollowRemind>{accountUrl}/freedom/followTips.do</investAutoFollowRemind>
+
+    <!--交易-->
+    <!--创建session-->
+    <sessionCreate>{tradeUrl}/createSession</sessionCreate>
+    <!--销毁session-->
+    <sessionDestroy>{tradeUrl}/destroySession</sessionDestroy>
+    <!--ping-->
+    <sessionPing>{tradeUrl}/ping</sessionPing>
+    <!--登录-->
+    <sessionLogin>{tradeUrl}/clientLogin</sessionLogin>
+    <!--账户资金查询-->
+    <sessionFundRequest>{tradeUrl}/clientExactFundAllQry</sessionFundRequest>
+    <!--持仓查询-->
+    <sessionStockRequest>{tradeUrl}/secuStockQry</sessionStockRequest>
+    <!--行情查询-->
+    <sessionPriceRequest>{tradeUrl}/secuPriceQry</sessionPriceRequest>
+    <!--委托查询-->
+    <sessionEntrustRequest>{tradeUrl}/secuEntrustQry</sessionEntrustRequest>
+    <!--委托撤单-->
+    <sessionEntrustWithdraw>{tradeUrl}/secuEntrustWithdraw</sessionEntrustWithdraw>
+    <!--成交查询-->
+    <sessionDealRequest>{tradeUrl}/secuRealtimeQry</sessionDealRequest>
+    <!--普通委托，买/卖-->
+    <sessionEntrust>{tradeUrl}/secuEntrust</sessionEntrust>
+    <!--大约可购买-->
+    <sessionBuyCount>{tradeUrl}/secuEnBuy</sessionBuyCount>
+    <!--代码输入确认-->
+    <sessionCodeEnsure>{tradeUrl}/secuCodeEnter</sessionCodeEnsure>
+    <!--证券代码信息查询-->
+    <sessionStockInfo>{tradeUrl}/stockCodeQry</sessionStockInfo>
+    <!--查询股票列表-->
+    <getStockList>{queryStockUrl}/prompt/list.do</getStockList>
+    <!--查询股东账户-->
+    <getShareHolderAccount>{tradeUrl}/clientStkAcctQry</getShareHolderAccount>
+    <!--查询股票代码所在地-->
+    <getStockExchangeType>{tradeUrl}/stockCodeQry</getStockExchangeType>
+    <!--查询历史成交列表-->
+    <getDealHistoryList>{tradeUrl}/hisBusinessQry</getDealHistoryList>
+    <!--登录的验证码-->
+    <getMagicCode>{tradeUrl}/magicCode</getMagicCode>
+    <!--交易二期，银行账户-->
+    <getBankAccount>{tradeUrl}/clientBankAccQry</getBankAccount>
+    <!--交易二期，银行账户余额流水号-->
+    <getBankMoney>{tradeUrl}/fundAmtQry</getBankMoney>
+    <!--交易二期，根据流水号取余额-->
+    <getBankSerialMoney>{tradeUrl}/bankTransferQry</getBankSerialMoney>
+    <!--交易二期，转账-->
+    <requestTransfer>{tradeUrl}/bankTransfer</requestTransfer>
+    <!--交易二期，流水列表-->
+    <getTransferFlowList>{tradeUrl}/bankTransferQry</getTransferFlowList>
+    <!--交易二期，历史转账列表-->
+    <getTransferHistoryList>{tradeUrl}/svrBankHisBkTransferQry</getTransferHistoryList>
+    <!--交易二期，自选股列表-->
+    <getStockSelectList>{messageUrl}/appEvent/v2/stockOptionalList.do</getStockSelectList>
+    <!--交易二期，增加/删除股票-->
+    <requestEditStockList>{messageUrl}/user/symbol.do</requestEditStockList>
+    <!--交易二期，交换两支股票的位置-->
+    <changeStockOrder>{messageUrl}/user/symbol/order.do</changeStockOrder>
+    <!--交易二期，更改持有股票的顺序-->
+    <moveStockOrder>{messageUrl}/user/symbol/move.do</moveStockOrder>
+    <!--选股七期，清仓股票列表-->
+    <clearanceStocksList>{messageUrl}/trade/liquidatedStocks.do</clearanceStocksList>
+    <!--选股七期，清仓股票交易列表  清仓股票列表的下一级-->
+    <clearanceStocksTradeList>{messageUrl}/trade/liquidatedStockTrans.do</clearanceStocksTradeList>
+    <!--选股七期，历史转账记录-->
+    <HistoryRecordList>{messageUrl}/trade/transferAccounts.do</HistoryRecordList>
+    <!--选股七期，历史成交对账单-->
+    <HistoryTradeList>{messageUrl}/trade/histTransBill.do</HistoryTradeList>
+    <!--选股七期，风险揭示书签署-->
+    <RiskCautionSign>{tradeUrl}/stockRiskWarnReg</RiskCautionSign>
+
+
+
+
+
+
+    <!--模拟交易-->
+    <!--账户资金详情-->
+    <getSimulateFund>{messageUrl}/simulate/totalMarketCapital.do</getSimulateFund>
+    <!--持仓-->
+<!--    <getSimulateHoldStock>{messageUrl}/investmentAdviser/simulate/position.do</getSimulateHoldStock>-->
+    <!--检查组合名称是否重复-->
+    <checkInvestCPName>{accountUrl}/investmentAdviser/whetherInUse.do</checkInvestCPName>
+    <!--查询是否有我的组合-->
+    <checkHaveInvestList>{accountUrl}/investmentAdviser/combination.do</checkHaveInvestList>
+    <!--查询我的组合列表-->
+    <getMyInvestCPList>{accountUrl}/investmentAdviser/rankingAndPosition.do</getMyInvestCPList>
+    <!--编辑组合资料-->
+    <editInvestInfo>{accountUrl}/investmentAdviser/modifyContent.do</editInvestInfo>
+    <!--最大可买可卖-->
+    <getMaxSimuTradeAmount>{messageUrl}/simulate/maxStockVol.do</getMaxSimuTradeAmount>
+    <!--委托列表-->
+    <getSimuEntrustList>{messageUrl}/simulate/entrustList.do</getSimuEntrustList>
+    <!--撤单-->
+    <sendSimuWithdraw>{messageUrl}/simulate/concelReq.do</sendSimuWithdraw>
+    <!--历史交易-->
+    <getSimuHistoryList>{accountUrl}/investmentAdviser/portfoliosHistoryTrading.do</getSimuHistoryList>
+    <!--模拟交易-->
+    <sendSimuTrade>{messageUrl}/simulate/tradingp.do</sendSimuTrade>
+    <!--检查投顾是否已跟单-->
+    <getSimuHasFollowed>{accountUrl}/investmentAdviser/isTrackOrder.do</getSimuHasFollowed>
+
+    <!--一键跟单-->
+    <!--检查是否可以跟单-->
+    <followOrderCheck>{followOrderUrl}/automatic/check.do</followOrderCheck>
+    <!--验证账号密码-->
+    <followOrderCheckLogin>{followOrderUrl}/automatic/pwdCheck.do</followOrderCheckLogin>
+    <!--跟单人初始数据查询-->
+    <followOrderTrackInit>{followOrderUrl}/automatic/trackInit.do</followOrderTrackInit>
+    <!--跟单支付保证金-->
+    <followOrderPayDeposit>{followOrderUrl}/automatic/payDeposit.do</followOrderPayDeposit>
+    <!--短信跟单付费-->
+    <messageFollowPayDeposit>{followOrderUrl}/game/smsDocumentary.do</messageFollowPayDeposit>
+    <!--登录的验证码-->
+    <followOrderMagicCode>{followOrderUrl}/magicCode</followOrderMagicCode>
+    <!--返回参考-->
+    <followOrderCopyReference>{followOrderUrl}/automatic/mirrorRefer.do</followOrderCopyReference>
+    <!--用户信息-->
+    <followOrderAccountInfomation>{followOrderUrl}/game/rankInfo.do</followOrderAccountInfomation>
+    <!--我的组合表现-->
+    <followOrderMyDisplay>{followOrderUrl}/automatic/portfolioEarnings.do</followOrderMyDisplay>
+    <!--我的成交记录-->
+    <followOrderMySuccessRecord>{followOrderUrl}/automatic/myDocumentary.do</followOrderMySuccessRecord>
+    <!--被跟单人成交记录-->
+    <followOrderFollowedSuccessRecord>{followOrderUrl}/automatic/followedDocumentary.do</followOrderFollowedSuccessRecord>
+    <!--取消跟单-->
+    <followOrderCancelFollow>{followOrderUrl}/automatic/cancelDocumentary.do</followOrderCancelFollow>
+    <!--跟单人数-->
+    <followOrderGetNumberOfFollow>{followOrderUrl}/automatic/myDocumentaryIncome.do</followOrderGetNumberOfFollow>
+    <!--被跟单人列表-->
+    <followOrderFollowedList>{followOrderUrl}/automatic/myDocumentaryIncomeDetail.do</followOrderFollowedList>
+    <!--最新跟单消息-->
+    <followOrderGetNewInfo>{followOrderUrl}/automatic/recentRelation.do</followOrderGetNewInfo>
+    
+    <!--跟单状态-->
+    <followOrderState>{followOrderUrl}/automatic/documentaryStatus.do</followOrderState>
+    <!--资金账户-->
+    <followOrderFundAccount>{followOrderUrl}/automatic/currentDocumentarys.do</followOrderFundAccount>
+    <!--历史列表-->
+    <followOrderHistoryList>{followOrderUrl}/automatic/historyDocumentarys.do</followOrderHistoryList>
+    <!--跟单关系-->
+    <followOrderRelation>{followOrderUrl}/automatic/relationStatus.do</followOrderRelation>
+    <!--我的历史跟单-->
+    <followOrderHistoryFollow>{followOrderUrl}/automatic/myHisDocumentary.do</followOrderHistoryFollow>
+    
+    <!--短信跟单-->
+    <!--被跟单人信息-->
+    <messageFollowUserInformation>{followOrderUrl}/game/rankInfo.do</messageFollowUserInformation>
+    <!--跟单价格-->
+    <messageFollowPrice>{followOrderUrl}/game/userTrackOrderPrice.do</messageFollowPrice>
+    
+    <!--投顾跟单-->
+    <!--被跟单人信息-->
+    <adviserFollowUserInformation>{followOrderUrl}/investmentAdviser/rankingsOverview.do</adviserFollowUserInformation>
+    <!--验证UserId能否一键跟单-->
+    <autoFollowCheckUserID>{followOrderUrl}/freedom/state.do</autoFollowCheckUserID>
+    <!--验证投顾一键跟单的账号密码-->
+    <adviserAutoFollowCheckAccount>{followOrderUrl}/freedom/pwdCheck.do</adviserAutoFollowCheckAccount>
+    <!--投顾一键跟单下单-->
+    <adviserAutoFollowPay>{followOrderUrl}/freedom/payDeposit.do</adviserAutoFollowPay>
+    <!--投顾一键跟单获取已绑定的资金账号-->
+    <adviserAutoFollowGetTradeAccount>{followOrderUrl}/freedom/userFundAccount.do</adviserAutoFollowGetTradeAccount>
+
+    <!--跟投专区-->
+    <followPrefecture>{recommendUrl}/game/preferIndexLists.do</followPrefecture>
+    <!--跟单达人-->
+    <followExpert>{followOrderUrl}/game/userRankList.do</followExpert>
+    <!--最新跟单-->
+    <followNewList>{followOrderUrl}/game/trackOrdersByFollowedAt.do</followNewList>
+    
+    <!--跟投专区轮播-->
+    <prefecturePicture>{followOrderUrl}/banner/getBanners.do</prefecturePicture>
+    
+    <!--一键跟单广告-->
+    <followOrderAdvertisement>{followOrderUrl}/ad/list.do</followOrderAdvertisement>
+    
+    <!--获取推荐的投顾userID和accountID-->
+    <getRecommendAccountID>{accountUrl}/investmentAdviser/currentAdviser.do</getRecommendAccountID>
+    
+    <!--历史收益-->
+    <!--总收益率-->
+    <allProfit>{accountUrl}/bill/income.do</allProfit>
+    <!--单笔交易-->
+    <singleProfit>{accountUrl}/bill/detail.do</singleProfit>
+
+    <!--理财接口-->
+    <!-- 获取服务器时间以进行客户端验证 -->
+    <fundGetServerTime>{followOrderFundUrl}/currentTime</fundGetServerTime>
+    <!-- 获取用户信息USUserDelegate -->
+    <fundGetUser>{followOrderFundUrl}/user/</fundGetUser>
+    
+    <!-- 银行卡列表USUserDelegate -->
+    <fundGetUserBankCardList>{followOrderFundUrl}/bankList/</fundGetUserBankCardList>
+
+    <!-- 绑卡获取短信验证码USUserDelegate -->
+    <fundGetSMS>{followOrderFundUrl}/vcode/cards/</fundGetSMS>
+
+    <!-- 开户绑卡USUserDelegate -->
+    <fundBindCardReq>{followOrderFundUrl}/user/openAccount</fundBindCardReq>
+
+    <!-- 用户已绑定的银行卡PayDelegate -->
+    <fundBindCardList>{followOrderFundUrl}/user/banks</fundBindCardList>
+
+    <!-- 我的资产PDProductDelegate -->
+    <fundMyProperty>{followOrderFundUrl}/user/position/count</fundMyProperty>
+    
+    <!--消息推送/设置跟单推送开关-->
+    <setFollowPushSwitch>{messageUrl}/push/setPushSwitch.do</setFollowPushSwitch>
+    <!--消息推送/查询跟单推送开关-->
+    <getFollowPushSwitch>{messageUrl}/push/getPushSwitch.do</getFollowPushSwitch>
+    <!---->
+    <!---->
+    
+    <!--自选股详情,是否为自选股-->
+    <confirmMyStock>{messageUrl}/appEvent/v3/isBelong.do</confirmMyStock>
+    <!--自选股详情,买卖信号-->
+    <buySellSignal>{queryBuySellUrl}/queryStock</buySellSignal>
+    <!--自选股详情,个股讨论-->
+    <detailDiscuss>{recommendUrl}/weibo/weibodoc.do</detailDiscuss>
+    <!--自选股详情,个股新闻-->
+    <detailNews>{queryStockUrl}/news/advancedSearch.do</detailNews>
+    <!--自选股详情,个股研报-->
+    <detailResearch>{queryStockUrl}/report/search.do</detailResearch>
+    <!--自选股详情,个股公告-->
+    <detailNotice>{queryStockUrl}/notice/advancedSearch.do</detailNotice>
+    <!--自选股详情,新闻详情-->
+    <detailNewsContent>{queryStockUrl}/news/detail.do</detailNewsContent>
+    <!--自选股详情,研报详情-->
+    <detailResearchContent>{queryStockUrl}/report/detail.do</detailResearchContent>
+    <!--自选股详情,公告详情-->
+    <detailNoticeContent>{queryStockUrl}/notice/detail.do</detailNoticeContent>
+    
+    <!--收到推送后，返回userID和messageID做统计-->
+    <sendReceivedPush>{messageUrl}/game/documentarySucc.do</sendReceivedPush>
+    
+    <!--我的 定制消息 买卖信号-->
+    <personalMessage>{messageUrl}/push/logInfo.do</personalMessage>
+    <!--我的 热点精选-->
+    <sysMessage>{messageUrl}/push/getNewsInfos.do</sysMessage>
+    <!--我的 热点精选详情-->
+    <sysMessageDetail>{messageUrl}/push/getNewsDetail.do</sysMessageDetail>
+    <!--我的 三方登录注册-->
+    <otherLoginRegister>{messageUrl}/smartPick/loginByOthers.do</otherLoginRegister>
+    <!--我的 消息气泡-->
+    <pushTipNum>{messageUrl}/jpush/stockPushLogAndTips.do</pushTipNum>
+    <!--我的 事件详情页-->
+    <eventDetail>{messageUrl}/appEvent/v3/getStockCodeEventDetails.do</eventDetail>
+
+
+    <!--  选股  -->
+    <!--选股,列表-->
+    <chooseStockHomePage>{messageUrl}/smartPick/chooseStockHomePage.do</chooseStockHomePage>
+    <!--实时选股-->
+    <currentChooseStock>{messageUrl}/smartPick/currentChooseStock.do</currentChooseStock>
+    <!--荐股-->
+    <recommendStock>{messageUrl}/smartPick/recommendStock.do</recommendStock>
+    <!--十大金股-->
+    <top10>{messageUrl}/smartPick/chooseStock.do</top10>
+    <!--标签股-->
+    <tagStock>{messageUrl}/smartPick/queryStockInfoByTagType.do</tagStock>
+    <!--意见反馈(客服小妹)-->
+    <feedBack>{messageUrl}/user/suggestion.do</feedback>
+    <!--5支热门自选股-->
+    <hotStock>{messageUrl}/smartPick/chooseStock.do</hotStock>
+    <!--  主题今日机会-->
+    <themeTodayChance>{bonePageUrl}/app/todayChance</themeTodayChance>
+    <!--  主题近期热点-->
+    <themeRecentHot>{bonePageUrl}/app/recentHotNews</themeRecentHot>
+    <!--  主题资讯跟踪-->
+    <themeInformationTracking>{bonePageUrl}/app/info</themeInformationTracking>
+    <!--  主题下个爆点-->
+    <themeBreakingPoint>{bonePageUrl}/app/nextHotPoint</themeBreakingPoint>
+    <!--  主题下一级 主题详情(头部视图数据接口)-->
+    <themeDetails>{bonePageUrl}/app/themeDetail</themeDetails>
+    <!--  主题下一级 主题新闻列表-->
+    <themeNewsList>{bonePageUrl}/app/themeNews</themeNewsList>
+    <!--  主题下一级 主题相关个股列表-->
+    <themeStocksList>{bonePageUrl}/app/themeStocks</themeStocksList>
+    <!--  主题下一级 新闻点击率接口（主题下新闻详情接口）-->
+    <theNewsHit>{bonePageUrl}/app/newsDetail</theNewsHit>
+    
+
+
+
+    <!--活动内参短文推送-->
+    <activePush>{messageUrl}/smartPick/pushMessage.do</activePush>
+    
+    <!--新股申购今日-->
+    <IPOToday>{tradeUrl}/userNewStkCodeQry</IPOToday>
+    <!--新股申购一周-->
+    <IPOWeek>{messageUrl}/smartPick/queryNewStock.do</IPOWeek>
+    <!--新股申购额度查询-->
+<!--    <IPOLimit>{tradeUrl}/secuSubeQuityQry</IPOLimit>-->
+    <!--新股申购历史中签信息查询-->
+<!--    <IPOHisLuckyInfo>{tradeUrl}/hisLuckyInfoQry</IPOHisLuckyInfo>-->
+    <!--新股申购历史证券配号中签信息查询-->
+    <IPOHisLucky>{tradeUrl}/hisLuckyMatchAndNewStockQry</IPOHisLucky>
+    <!--新股申购历史配号信息查询-->
+    <IPOHisMatch>{tradeUrl}/hisMatchInfoAndNewStockQry</IPOHisMatch>
+    
+    <!--客户或经济人查询-->
+    <clientType>{messageUrl}/appUser/queryCustomInfo.do</clientType>
+    
+    
+    
+    <!--    B端-->
+    <!-- 查询 B总的、本月的、过去12个月的牛骨-->
+    <enquiriesBbeefbones>{bonePageUrl}/xgwBouns/bouns</enquiriesBbeefbones>
+<!-- 老接口   <enquiriesBbeefbones>{messageUrl}/appUser/queryBRebate.do</enquiriesBbeefbones>-->
+  
+    <!-- 查询 B当月每天获得牛骨明细和本月新增牛骨-->
+    <enquiriesBDaybeefbones>{bonePageUrl}/xgwBouns/monthBounDetail</enquiriesBDaybeefbones>
+ <!-- 老接口   <enquiriesBDaybeefbones>{messageUrl}/appUser/queryBMonthRebate.do</enquiriesBDaybeefbones>-->
+    <!-- 小B居间人生成二维码地址-->
+    <enquiriesBTwoBarCode>{messageUrl}/appUser/gainBarCode.do</enquiriesBTwoBarCode>
+    <!-- B端首页-收入排行（月榜）-->
+    <Incomerank>{bonePageUrl}/xgwBouns/monthIncomeList</Incomerank>
+    <!-- 查询B端我的牛骨、好友牛骨、打赏明细）-->
+    <beefBoneContributeList>{bonePageUrl}/xgwBouns/incomeList</beefBoneContributeList>
+    <!-- 证联用户信息查询 -->
+    <enquiriesUserInfo>{followOrderUrl}/zlzf/zlUserInfo.do</enquiriesUserInfo>
+    <!-- 小B提现 -->
+    <withdrawCash>{followOrderUrl}/zlzf/withdrawApply.do</withdrawCash>
+    <!-- 小B提现流水 -->
+    <withdrawCashList>{followOrderUrl}/zlzf/withdrawList.do</withdrawCashList>
+    <!-- B端绑卡 获取用户身份证信息 -->
+    <TiedCardUserInfo>{messageUrl}/appUser/userInfo.do</TiedCardUserInfo>
+
+
+
+
+
+
+    <!--    C端-->
+    <!-- 查询 C端我的牛骨记录-->
+    <queryCbeefbones>{bonePageUrl}/xgwBouns/generalJournal</queryCbeefbones>
+    <!-- 判断是否提示用户获得登录牛骨奖励-->
+    <showBeefBoneAward>{bonePageUrl}/xgwBouns/windowChecker</showBeefBoneAward>
+    <!-- 查询、设置自动打赏状态-->
+<!--    <qureySetAutoGiveBone>{messageUrl}/xgwBouns/autoContributeState</qureySetAutoGiveBone>-->
+    <qureySetAutoGiveBone>{bonePageUrl}/xgwBouns/autoContributeState</qureySetAutoGiveBone>
+    <!-- 投资组合市场研判-->
+    <reportAndOperation>{messageUrl}/simulate/reportAndOperation.do</reportAndOperation>
+    
+    <!--打赏好友-->
+    <rewardAgent>{bonePageUrl}/xgwBouns/contributionBouns</rewardAgent>
+    <!--设置备注-->
+    <editRemarkName>{bonePageUrl}/xgwBouns/cRemarkName</editRemarkName>
+    
+    <!--恒生公告-->
+    <hsNotice>{hsNoticeUrl}/memcached/json/</hsNotice>
+    <!--有声内参-->
+    <voiceInternal>{accountUrl}/xgw/mp3s.do</voiceInternal>
+    
+    <!--    C端我的 服务-->
+    <!--未登录的相关主题接口  -->
+    <NotLoginTheme>{bonePageUrl}/a/myservice/relatedTheme</NotLoginTheme>
+
+    <!--已登录的相关主题接口  -->
+    <LoginTheme>{bonePageUrl}/a/u/myservice/relatedTheme</LoginTheme>
+
+    <!--主题banner点击率  -->
+    <ThemeBannerClickNum>{bonePageUrl}/app/bannerClickNum</ThemeBannerClickNum>
+    
+    <!--入群在线状态监听接口-->
+    <IMTribeState>{IMUrl}/im/tribe/notify</IMTribeState>
+    <!--<APP端强制更新接口-->
+    <MustBeUpdate>{bonePageUrl}/a/force/update</MustBeUpdate>
+
+    <!--财富管理内容  -->
+    <WealthManageContent>{bonePageUrl}/a/u/myservice/promote/brokerage</WealthManageContent>
+    
+    <!--组合+内参+独家+聊股简介  -->
+    <groupIntro>{bonePageUrl}/a/myservice/intro</groupIntro>
+    <!--市场研判+今日操作  -->
+    <groupReportAndOperation>{bonePageUrl}/a/myservice/reportAndOperation</groupReportAndOperation>
+    <!--当前持仓+仓位分析  -->
+    <groupPosition>{bonePageUrl}/a/myservice/position</groupPosition>
+    <!--定制消息或定制消息最新一条  -->
+    <customFirstNews>{messageUrl}/push/lastestMsg.do</customFirstNews>
+    <!--重大新闻  -->
+    <importantNews>{bonePageUrl}/a/u/index/newsList</importantNews>
+    <!--寻牛诀服务内容  -->
+    <searchBeefContent>{bonePageUrl}/a/u/myservice/xnj/detail</searchBeefContent>
+
+    
+    <!--微信支付  -->
+    <!--下订单接口  -->
+    <orderPay>{WXPayUrl}/a/u/myservice/xnj/order</orderPay>
+    <!--查询订单状态接口  -->
+    <enquiriesOrder>{WXPayUrl}/a/u/myservice/xnj/%@/payresult</enquiriesOrder>
+
+<!--封装开户接口-->
+<!--    短信发送-->
+<crhSmsVerifyCode>{cRHOpenAccountUrl}/fundAccount/open/getValidateCode</crhSmsVerifyCode>
+
+<!--    注册客户信息查询-->
+<crhCheckRegisterUser>{cRHOpenAccountUrl}/fundAccount/open/checkRegisterUser</crhCheckRegisterUser>
+
+<!--    客户信息查询-->
+<crhQueryClientInfo>{cRHOpenAccountUrl}/fundAccount/open/qryClientInfo</crhQueryClientInfo>
+
+<!--    协议列表-->
+<crhProtocolList>{cRHOpenAccountUrl}/fundAccount/open/getEcontractConfig</crhProtocolList>
+<!--    协议内容-->
+<crhProtocolContent>{cRHOpenAccountUrl}/fundAccount/open/getEcontractTextConfig</crhProtocolContent>
+
+<!--    数据字典查询-->
+<crhQueryDataDic>{cRHOpenAccountUrl}/fundAccount/open/searchBranch</crhQueryDataDic>
+
+<!--    上传个人身份证照片-->
+<crhUploadPersonIdImg>{cRHOpenAccountUrl}/fundAccount/open/uploadArchBase64</crhUploadPersonIdImg>
+<!--    检查是否可以开户-->
+<crhCheckCanOpenAcc>{cRHOpenAccountUrl}/fundAccount/open/checkUser</crhCheckCanOpenAcc>
+
+<!--    上传修改个人信息-->
+<crhUploadPersonMsg>{cRHOpenAccountUrl}/fundAccount/open/updateClientInfo</crhUploadPersonMsg>
+
+<!--    查询万寿路营业部佣金  万寿路branchno 33-->
+<crhQueryBranchCommission>{cRHOpenAccountUrl}/fundAccount/open/getLocatedOrg</crhQueryBranchCommission>
+
+<!--    设置交易资金密码-->
+<crhSetTradePassword>{cRHOpenAccountUrl}/fundAccount/open/setPassword</crhSetTradePassword>
+
+<!--    证券账号开户申请-->
+<crhOpenStockAcc>{cRHOpenAccountUrl}/fundAccount/open/openStockAccount</crhOpenStockAcc>
+<!--    基金账号开户申请-->
+<crhOpenFundAcc>{cRHOpenAccountUrl}/CRH-KH0035</crhOpenFundAcc>
+
+<!--    存管账号开户申请-->
+<crhDepositOpenAcc>{cRHOpenAccountUrl}/fundAccount/open/bind</crhDepositOpenAcc>
+<!--    存管银行查询-->
+<crhDepositBankQuery>{cRHOpenAccountUrl}/fundAccount/open/searchBranchForBank</crhDepositBankQuery>
+<!--    银行卡匹配查询-->
+<jinhuiBankAccCheck>{followOrderFundUrl}/offline/checkBankCard</jinhuiBankAccCheck>
+
+<!--    电子协议签署-->
+<crhProtocolSign>{cRHOpenAccountUrl}/fundAccount/open/signAgreement</crhProtocolSign>
+
+<!--    风险测评试卷-->
+<crhRiskTestPaper>{cRHOpenAccountUrl}/fundAccount/open/qryEligPaper</crhRiskTestPaper>
+<!--    风险测评提交-->
+<crhRiskTestCommit>{cRHOpenAccountUrl}/fundAccount/open/submitExamAnswer</crhRiskTestCommit>
+<!--    风险测评查询-->
+<crhRiskTestQuery>{cRHOpenAccountUrl}/fundAccount/open/getRiskResult</crhRiskTestQuery>
+<!--    风险测评结果确认-->
+<crhRiskResultConfirm>{cRHOpenAccountUrl}/fundAccount/open/confirmRiskResult</crhRiskResultConfirm>
+<!--    适当性匹配检查-->
+<crhRiskMatchCheck>{cRHOpenAccountUrl}/fundAccount/open/suitCheck</crhRiskMatchCheck>
+
+<!--    回访问卷-->
+<crhReturnVisitPaper>{cRHOpenAccountUrl}/fundAccount/open/getRevisitQuestionList</crhReturnVisitPaper>
+<!--    回访问卷提交-->
+<crhReturnVisitCommit>{cRHOpenAccountUrl}/fundAccount/open/submitRevisitAnswer</crhReturnVisitCommit>
+
+<!--    开户状态查询-->
+<crhOpenAccStatusQuery>{cRHOpenAccountUrl}/fundAccount/open/qryOpenStatus</crhOpenAccStatusQuery>
+<!--    开户结果查询-->
+<crhOpenAccResultQuery>{cRHOpenAccountUrl}/fundAccount/open/qryOpenAccount</crhOpenAccResultQuery>
+<!--    开户申请-->
+<crhOpenAccApply>{cRHOpenAccountUrl}/fundAccount/open/userSubmitToAduit</crhOpenAccApply>
+
+<!--        用户视频状态信息获取-->
+<crhUserVedioStatusInfoQuery>{cRHOpenAccountUrl}/fundAccount/open/getVideoInfo</crhUserVedioStatusInfoQuery>
+<!--    发起视频请求-->
+<crhBeginVideoRequest>{cRHOpenAccountUrl}/fundAccount/open/getVideo</crhBeginVedioRequest>
+
+
+<!--    视频客服查询-->
+<crhVideoServiceQuery>{cRHOpenAccountUrl}/fundAccount/open/searchServiceVideo</crhVideoServiceQuery>
+
+    
+
+    
+
+</Services>
