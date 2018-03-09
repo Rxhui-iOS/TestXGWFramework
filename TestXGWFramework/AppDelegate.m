@@ -12,6 +12,8 @@
 #import <RHXGWFramework/STKAddress.h>
 #import <RHXGWFramework/STKManager.h>
 #import <RHXGWFramework/SKCodeTable.h>
+#import <RHXGWFramework/AnyChatDefine.h>
+#import <RHXGWFramework/AnyChatPlatform.h>
 
 #import "ViewController.h"
 
@@ -26,6 +28,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    //初始化AnyChatSDK
+    [AnyChatPlatform InitSDK:0];
     
     //配置交易用的行情地址
     STKAddress *socketConfig = [[STKAddress alloc] initWithHost:@"phone.jinhui123.com" port:9002];
@@ -54,17 +59,21 @@
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+    [AnyChatPlatform SetSDKOptionInt:BRAC_SO_CORESDK_ACTIVESTATE :0];
 }
 
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    [AnyChatPlatform SetSDKOptionInt:BRAC_SO_CORESDK_ACTIVESTATE :0];
 }
 
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
     // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+    [AnyChatPlatform SetSDKOptionInt:BRAC_SO_CORESDK_ACTIVESTATE :1];
+    [AnyChatPlatform ActiveCallLog:YES];
 }
 
 
