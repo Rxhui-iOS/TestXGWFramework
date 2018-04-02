@@ -16,8 +16,8 @@
     <bonePageUrl>http://smart.jinhui001.com</bonePageUrl>
     <IMUrl>http://im.jinhui001.com</IMUrl>
     <WXPayUrl>http://smart-pay.rxhui.com</WXPayUrl>
-    <cRHOpenAccountUrl>http://bjkhjk.hczq.com:60001</cRHOpenAccountUrl>
-<!--    <cRHOpenAccountUrl>http://10.0.0.22:8152</cRHOpenAccountUrl>-->
+<!--    <cRHOpenAccountUrl>http://bjkhjk.hczq.com:60001</cRHOpenAccountUrl>-->
+    <cRHOpenAccountUrl>http://10.0.0.22:8152</cRHOpenAccountUrl>
 
 
 </config>

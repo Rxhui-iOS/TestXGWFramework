@@ -37,6 +37,11 @@
     tradeController.navigationToStockDetailBlock = ^(NSDictionary *params) {
         NSLog(@"%@",params);
     };
+    
+    //发通知  参数 : @{@"channel":@"xgw",@"commission":@"0.025%"}  channel对应的是渠道号   commission 对应的是佣金
+    //不传参数  或  不发此通知 默认channel为xgw  commission为0.025%
+     [[NSNotificationCenter defaultCenter] postNotificationName:@"Receiveparam" object:@{@"channel":@"xgw",@"commission":@"0.025%"}];
+    
     [self.navigationController pushViewController:tradeController animated:YES];
 }
 
