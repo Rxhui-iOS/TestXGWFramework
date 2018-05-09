@@ -622,6 +622,10 @@
 <!--    上传修改个人信息-->
 <crhUploadPersonMsg>{cRHOpenAccountUrl}/fundAccount/open/updateClientInfo</crhUploadPersonMsg>
 
+<!--    提交税收证明 -->
+<crhUploadPersonRevenve>{cRHOpenAccountUrl}/fundAccount/open/infoSubmit</crhUploadPersonRevenve>
+
+
 <!--    查询万寿路营业部佣金  万寿路branchno 33-->
 <crhQueryBranchCommission>{cRHOpenAccountUrl}/fundAccount/open/getLocatedOrg</crhQueryBranchCommission>
 
