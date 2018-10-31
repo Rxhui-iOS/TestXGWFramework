@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C0F717D217DA249002FCCD8 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C0F717C217DA249002FCCD8 /* libstdc++.6.0.9.tbd */; };
+		5C0F717F217DA314002FCCD8 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C0F717E217DA314002FCCD8 /* libc++.tbd */; };
+		5C5B99D42177160500B9CB42 /* RHtoCRHNaviManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5B99D22177160400B9CB42 /* RHtoCRHNaviManager.m */; };
+		5C5B99DE2177181D00B9CB42 /* sjkh-config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5C5B99D72177181D00B9CB42 /* sjkh-config.plist */; };
+		5C5B99DF2177181D00B9CB42 /* CRHFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C5B99D82177181D00B9CB42 /* CRHFramework.framework */; };
+		5C5B99E02177181D00B9CB42 /* ExBankCardSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C5B99D92177181D00B9CB42 /* ExBankCardSDK.framework */; };
+		5C5B99E12177181D00B9CB42 /* ExBankCardRes.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5C5B99DA2177181D00B9CB42 /* ExBankCardRes.bundle */; };
+		5C5B99E22177181D00B9CB42 /* ExCardSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C5B99DB2177181D00B9CB42 /* ExCardSDK.framework */; };
+		5C5B99E32177181D00B9CB42 /* CRHFramework.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5C5B99DC2177181D00B9CB42 /* CRHFramework.bundle */; };
+		5C5B99E42177181D00B9CB42 /* ExCardRes.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5C5B99DD2177181D00B9CB42 /* ExCardRes.bundle */; };
 		5C8EC197201049C0001A1DF5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C8EC196201049C0001A1DF5 /* AppDelegate.m */; };
 		5C8EC19A201049C1001A1DF5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C8EC199201049C1001A1DF5 /* ViewController.m */; };
 		5C8EC19F201049C1001A1DF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C8EC19E201049C1001A1DF5 /* Assets.xcassets */; };
@@ -15,8 +25,9 @@
 		5C8EC1AE20104BC8001A1DF5 /* RHXGWFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5C8EC1AB201049CD001A1DF5 /* RHXGWFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5C8EC1B620104FCE001A1DF5 /* ServiceProvider.xml in Resources */ = {isa = PBXBuildFile; fileRef = 5C8EC1B420104FCE001A1DF5 /* ServiceProvider.xml */; };
 		5C8EC1B720104FCE001A1DF5 /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = 5C8EC1B520104FCE001A1DF5 /* config.xml */; };
-		5C8EC3A920107110001A1DF5 /* sjkh-config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5C8EC3A820107110001A1DF5 /* sjkh-config.plist */; };
 		5C8EC3AB20107523001A1DF5 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C8EC3AA20107523001A1DF5 /* Launch Screen.storyboard */; };
+		5CFD45EA217826C100786B7D /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CFD45E9217826C000786B7D /* CoreTelephony.framework */; };
+		5CFD45EE217826F600786B7D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CFD45ED217826F600786B7D /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +44,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5C0F717C217DA249002FCCD8 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		5C0F717E217DA314002FCCD8 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		5C5B99D22177160400B9CB42 /* RHtoCRHNaviManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHtoCRHNaviManager.m; sourceTree = "<group>"; };
+		5C5B99D32177160400B9CB42 /* RHtoCRHNaviManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHtoCRHNaviManager.h; sourceTree = "<group>"; };
+		5C5B99D72177181D00B9CB42 /* sjkh-config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "sjkh-config.plist"; sourceTree = "<group>"; };
+		5C5B99D82177181D00B9CB42 /* CRHFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CRHFramework.framework; sourceTree = "<group>"; };
+		5C5B99D92177181D00B9CB42 /* ExBankCardSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ExBankCardSDK.framework; sourceTree = "<group>"; };
+		5C5B99DA2177181D00B9CB42 /* ExBankCardRes.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ExBankCardRes.bundle; sourceTree = "<group>"; };
+		5C5B99DB2177181D00B9CB42 /* ExCardSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ExCardSDK.framework; sourceTree = "<group>"; };
+		5C5B99DC2177181D00B9CB42 /* CRHFramework.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CRHFramework.bundle; sourceTree = "<group>"; };
+		5C5B99DD2177181D00B9CB42 /* ExCardRes.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ExCardRes.bundle; sourceTree = "<group>"; };
 		5C8EC192201049C0001A1DF5 /* TestXGWFramework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestXGWFramework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C8EC195201049C0001A1DF5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5C8EC196201049C0001A1DF5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -44,8 +66,11 @@
 		5C8EC1AB201049CD001A1DF5 /* RHXGWFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RHXGWFramework.framework; sourceTree = "<group>"; };
 		5C8EC1B420104FCE001A1DF5 /* ServiceProvider.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = ServiceProvider.xml; sourceTree = "<group>"; };
 		5C8EC1B520104FCE001A1DF5 /* config.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = config.xml; sourceTree = "<group>"; };
-		5C8EC3A820107110001A1DF5 /* sjkh-config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "sjkh-config.plist"; sourceTree = "<group>"; };
 		5C8EC3AA20107523001A1DF5 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "TestXGWFramework/Launch Screen.storyboard"; sourceTree = "<group>"; };
+		5CFD45E72178268400786B7D /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		5CFD45E9217826C000786B7D /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		5CFD45EB217826E500786B7D /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		5CFD45ED217826F600786B7D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,19 +78,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C0F717F217DA314002FCCD8 /* libc++.tbd in Frameworks */,
+				5C0F717D217DA249002FCCD8 /* libstdc++.6.0.9.tbd in Frameworks */,
+				5CFD45EE217826F600786B7D /* SystemConfiguration.framework in Frameworks */,
+				5CFD45EA217826C100786B7D /* CoreTelephony.framework in Frameworks */,
+				5C5B99E22177181D00B9CB42 /* ExCardSDK.framework in Frameworks */,
+				5C5B99E02177181D00B9CB42 /* ExBankCardSDK.framework in Frameworks */,
 				5C8EC1AC201049CD001A1DF5 /* RHXGWFramework.framework in Frameworks */,
+				5C5B99DF2177181D00B9CB42 /* CRHFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C5B99D62177181D00B9CB42 /* CRH */ = {
+			isa = PBXGroup;
+			children = (
+				5C5B99D72177181D00B9CB42 /* sjkh-config.plist */,
+				5C5B99D82177181D00B9CB42 /* CRHFramework.framework */,
+				5C5B99D92177181D00B9CB42 /* ExBankCardSDK.framework */,
+				5C5B99DA2177181D00B9CB42 /* ExBankCardRes.bundle */,
+				5C5B99DB2177181D00B9CB42 /* ExCardSDK.framework */,
+				5C5B99DC2177181D00B9CB42 /* CRHFramework.bundle */,
+				5C5B99DD2177181D00B9CB42 /* ExCardRes.bundle */,
+			);
+			path = CRH;
+			sourceTree = "<group>";
+		};
 		5C8EC189201049C0001A1DF5 = {
 			isa = PBXGroup;
 			children = (
 				5C8EC3AA20107523001A1DF5 /* Launch Screen.storyboard */,
 				5C8EC194201049C0001A1DF5 /* TestXGWFramework */,
 				5C8EC193201049C0001A1DF5 /* Products */,
+				5CFD45E62178268300786B7D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,19 +127,34 @@
 		5C8EC194201049C0001A1DF5 /* TestXGWFramework */ = {
 			isa = PBXGroup;
 			children = (
+				5C5B99D62177181D00B9CB42 /* CRH */,
 				5C8EC1AB201049CD001A1DF5 /* RHXGWFramework.framework */,
 				5C8EC195201049C0001A1DF5 /* AppDelegate.h */,
 				5C8EC196201049C0001A1DF5 /* AppDelegate.m */,
+				5C5B99D32177160400B9CB42 /* RHtoCRHNaviManager.h */,
+				5C5B99D22177160400B9CB42 /* RHtoCRHNaviManager.m */,
 				5C8EC198201049C0001A1DF5 /* ViewController.h */,
 				5C8EC199201049C1001A1DF5 /* ViewController.m */,
 				5C8EC1B520104FCE001A1DF5 /* config.xml */,
-				5C8EC3A820107110001A1DF5 /* sjkh-config.plist */,
 				5C8EC1B420104FCE001A1DF5 /* ServiceProvider.xml */,
 				5C8EC19E201049C1001A1DF5 /* Assets.xcassets */,
 				5C8EC1A3201049C1001A1DF5 /* Info.plist */,
 				5C8EC1A4201049C1001A1DF5 /* main.m */,
 			);
 			path = TestXGWFramework;
+			sourceTree = "<group>";
+		};
+		5CFD45E62178268300786B7D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5C0F717E217DA314002FCCD8 /* libc++.tbd */,
+				5C0F717C217DA249002FCCD8 /* libstdc++.6.0.9.tbd */,
+				5CFD45ED217826F600786B7D /* SystemConfiguration.framework */,
+				5CFD45EB217826E500786B7D /* MobileCoreServices.framework */,
+				5CFD45E9217826C000786B7D /* CoreTelephony.framework */,
+				5CFD45E72178268400786B7D /* CFNetwork.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +190,11 @@
 					5C8EC191201049C0001A1DF5 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -154,10 +221,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C8EC3A920107110001A1DF5 /* sjkh-config.plist in Resources */,
+				5C5B99DE2177181D00B9CB42 /* sjkh-config.plist in Resources */,
+				5C5B99E42177181D00B9CB42 /* ExCardRes.bundle in Resources */,
 				5C8EC19F201049C1001A1DF5 /* Assets.xcassets in Resources */,
+				5C5B99E12177181D00B9CB42 /* ExBankCardRes.bundle in Resources */,
 				5C8EC1B620104FCE001A1DF5 /* ServiceProvider.xml in Resources */,
 				5C8EC3AB20107523001A1DF5 /* Launch Screen.storyboard in Resources */,
+				5C5B99E32177181D00B9CB42 /* CRHFramework.bundle in Resources */,
 				5C8EC1B720104FCE001A1DF5 /* config.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -171,6 +241,7 @@
 			files = (
 				5C8EC19A201049C1001A1DF5 /* ViewController.m in Sources */,
 				5C8EC1A5201049C1001A1DF5 /* main.m in Sources */,
+				5C5B99D42177160500B9CB42 /* RHtoCRHNaviManager.m in Sources */,
 				5C8EC197201049C0001A1DF5 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,6 +363,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/TestXGWFramework",
+					"$(PROJECT_DIR)/TestXGWFramework/CRH",
 				);
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = TestXGWFramework/Info.plist;
@@ -300,7 +372,7 @@
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/TestXGWFramework/RHXGWFramework.framework/Headers";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rxhui.importevent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -314,6 +386,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/TestXGWFramework",
+					"$(PROJECT_DIR)/TestXGWFramework/CRH",
 				);
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = TestXGWFramework/Info.plist;
@@ -322,7 +395,7 @@
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/TestXGWFramework/RHXGWFramework.framework/Headers";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rxhui.importevent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

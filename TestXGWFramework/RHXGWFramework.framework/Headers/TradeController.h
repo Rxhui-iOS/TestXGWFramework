@@ -17,4 +17,7 @@ typedef void (^TradeCallBackWithParams)(NSDictionary *params);
 ///参数举例：{@"stockCode":@"sha_600004"}
 @property (nonatomic, copy) TradeCallBackWithParams navigationToStockDetailBlock;
 
+///跳转到掌厅
+@property (nonatomic, copy) TradeCallBack navigationToZT;
+
 @end

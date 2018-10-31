@@ -12,8 +12,12 @@
 #import <RHXGWFramework/STKAddress.h>
 #import <RHXGWFramework/STKManager.h>
 #import <RHXGWFramework/SKCodeTable.h>
-#import <RHXGWFramework/AnyChatDefine.h>
-#import <RHXGWFramework/AnyChatPlatform.h>
+
+#import <CRHFramework/AnyChatDefine.h>
+#import <CRHFramework/AnyChatPlatform.h>
+
+//#import <RHXGWFramework/AnyChatDefine.h>
+//#import <RHXGWFramework/AnyChatPlatform.h>
 
 #import "ViewController.h"
 
@@ -67,6 +71,9 @@
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
     [AnyChatPlatform SetSDKOptionInt:BRAC_SO_CORESDK_ACTIVESTATE :0];
+    [application beginBackgroundTaskWithExpirationHandler:^{
+        
+    }];
 }
 
 
@@ -74,6 +81,7 @@
     // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
     [AnyChatPlatform SetSDKOptionInt:BRAC_SO_CORESDK_ACTIVESTATE :1];
     [AnyChatPlatform ActiveCallLog:YES];
+    [application endBackgroundTask:UIBackgroundFetchResultNewData];
 }
 
 

@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import <RHXGWFramework/TradeController.h>
 
+#import "RHtoCRHNaviManager.h"
+
 @interface ViewController ()
 
 @property (nonatomic, strong) UIButton *tradeButton;
@@ -24,6 +26,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(navigationToCRHZT) name:@"kNaviToCRHZTNotification" object:nil];
     
     self.tradeButton = [[UIButton alloc]init];
     [self.tradeButton setTitle:@"交易" forState:UIControlStateNormal];
@@ -43,6 +47,13 @@
     self.tradeController.navigationToStockDetailBlock = ^(NSDictionary *params) {
         NSLog(@"%@",params);
     };
+}
+
+- (void)navigationToCRHZT {
+    /**
+     *
+     **/
+    [RHtoCRHNaviManager navigationToCRHControllerWithCurrent:self.navigationController];
 }
 
 - (void)navigationToBuy {
