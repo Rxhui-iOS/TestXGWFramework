@@ -50,10 +50,9 @@
 }
 
 - (void)navigationToCRHZT {
-    /**
-     *
-     **/
-    [RHtoCRHNaviManager navigationToCRHControllerWithCurrent:self.navigationController];
+  
+    [self.tradeController removeTradeLoginView];
+    [RHtoCRHNaviManager navigationToCRHControllerWithCurrent:self.tradeController];
 }
 
 - (void)navigationToBuy {

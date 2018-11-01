@@ -20,4 +20,5 @@ typedef void (^TradeCallBackWithParams)(NSDictionary *params);
 ///跳转到掌厅
 @property (nonatomic, copy) TradeCallBack navigationToZT;
 
+-(void)removeTradeLoginView;
 @end
